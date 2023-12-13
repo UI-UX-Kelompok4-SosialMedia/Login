@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,28 +9,49 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" /> -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="w-100">
       <nav class="navbar navbar-expand-lg navbar-custom p-0">
         <div class="container-fluid nav-fluid">
-          <a class="navbar-brand desktop-logo" href="#"><img src="assets/logo.png" width="70" /></a>
-          <a class="navbar-brand mobile-logo" href="#"><img src="assets/logo-mobile.png" width="90" /></a>
-          <!-- <form class="d-flex" role="search">
-            <div class="search-field">
-              <i class="bx bx-search"></i>
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            </div>
-          </form> -->
+          <a class="navbar-brand desktop-logo" href="#"
+            ><img src="assets/logo.png" width="70"
+          /></a>
+          <a class="navbar-brand mobile-logo" href="#"
+            ><img src="assets/logo-mobile.png" width="90"
+          /></a>
+
           <ul class="nav justify-content-end">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <img src="assets/avatar.jpg" class="rounded-circle" width="50" /> </a>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/avatar.jpg"
+                  class="rounded-circle"
+                  width="50"
+                />
+              </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li class="notif"><a class="dropdown-item" href="#">Notification</a></li>
+                <li>
+                  <a class="dropdown-item" href="profile.html">Profile</a>
+                </li>
+                <li class="notif">
+                  <a class="dropdown-item" href="#">Notification</a>
+                </li>
                 <li><a class="dropdown-item" href="index.html">Logout</a></li>
               </ul>
             </li>
@@ -36,59 +59,206 @@
         </div>
       </nav>
     </header>
-    <aside class="col-lg-3 p-lg-5">
+
+    <div class="row" id="main">
+      <aside class="col-lg-3 p-lg-5">
         <div class="left card sidebar" id="sidebar">
           <div class="card-body p-0">
-            <img src="assets/logo-mobile.png" width="145" class="m-3" alt="logo" />
+            <img
+              src="assets/logo-mobile.png"
+              width="145"
+              class="m-3"
+              alt="logo"
+            />
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link menu-link selected" href="#"><i class="bx bx-home"></i> Home</a>
+                <a class="nav-link menu-link selected" href="#"
+                  ><i class="bx bx-home"></i> Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#"><i class="bx bx-bell"></i> Notifications</a>
+                <a class="nav-link menu-link" href="#"
+                  ><i class="bx bx-bell"></i> Notifications</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#"><i class="bx bx-chat"></i> Messages</a>
+                <a class="nav-link menu-link" href="#"
+                  ><i class="bx bx-chat"></i> Messages</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link menu-link" href="#"><i class="bx bx-cog"></i> Setting</a>
+                <a class="nav-link menu-link" href="#"
+                  ><i class="bx bx-cog"></i> Setting</a
+                >
               </li>
             </ul>
+            <!-- <hr class="w-75 text-center" /> -->
           </div>
         </div>
       </aside>
-    
+      <main class="col-lg-6">
+        <!-- Posts -->
+        <div class="card-body mt-4">
+            <div class="bg-white p-2 rounded-bottom">
+                <div class="d-flex">
+                    <img class="w-100" src="Assets/background.png" alt="Background Image" />
+                </div>
+                <div class="d-flex justify-content-start ms-5 ">
+                    <img src="assets/avatar-2.jpg" class="img-fluid object-fit-cover" />
+                </div>
+            </div>
+        </div>
+       
+        <h1 class="post-title">Posts</h1>
+        <div class="card w-100 shadow-sm mb-3">
+          <div class="card-body">
+            <div class="row mb-2 justify-content-sm-between">
+              <div class="col-3 col-sm-2 col-md-1 p-md-0 ps-md-2">
+                <div class="img-container text-center">
+                  <img
+                    src="assets/avatar-2.jpg"
+                    class="img-fluid object-fit-cover"
+                  />
+                </div>
+              </div>
+              <div class="col-7 col-sm-9 col-md-10 px-md-3 flex-sm-fill p-0">
+                <h5 class="card-title post-name mb-0">Jackson</h5>
+                <h6 class="card-subtitle post-date mb-2 text-body-secondary">
+                  Dec 02, 2020
+                </h6>
+              </div>
+              <div class="col-2 col-sm-1 col-md-1 p-0 text-center">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Hapus</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+            <p class="card-text post-content">
+              Occaecat ad non sit exercitation ipsum pariatur ullamco
+              consectetur ad voluptate tempor non cillum. Dolore occaecat aliqua
+              labore nulla adipisi
+            </p>
+            <div class="row justify-content-sm-between">
+              <div class="col-2 col-sm-1 fs-3 post-button">
+                <i class="bx bx-like"></i>
+              </div>
+              <div class="col-1 p-0 px-sm-2 fs-3 post-button">
+                <i class="bx bx-comment"></i>
+              </div>
+              <div
+                class="col-9 col-sm-10 flex-sm-fill fs-3 text-end post-button"
+              >
+                <i class="bx bx-bookmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card w-100 shadow-sm mb-3">
+          <div class="card-body">
+            <div class="row mb-2 justify-content-sm-between">
+              <div class="col-3 col-sm-2 col-md-1 p-md-0 ps-md-2">
+                <div class="img-container text-center">
+                  <img
+                    src="assets/avatar-3.jpg"
+                    class="img-fluid object-fit-cover"
+                  />
+                </div>
+              </div>
+              <div class="col-7 col-sm-9 col-md-10 px-md-3 flex-sm-fill p-0">
+                <h5 class="card-title post-name mb-0">Brian Scott</h5>
+                <h6 class="card-subtitle post-date mb-2 text-body-secondary">
+                  Dec 02, 2020
+                </h6>
+              </div>
+              <div class="col-2 col-sm-1 col-md-1 p-0 text-center">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bx bx-dots-horizontal-rounded"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                    <li><a class="dropdown-item" href="#">Hapus</a></li>
+                  </ul>
+                </li>
+              </div>
+            </div>
+            <div class="img-post mb-3">
+              <img src="assets/post-1.jpg" alt="post-1" class="" />
+            </div>
+            <p class="card-text post-content">
+              Occaecat ad non sit exercitation ipsum pariatur ullamco
+              consectetur ad voluptate tempor non cillum. Dolore occaecat aliqua
+              labore nulla adipisi
+            </p>
+            <div class="row justify-content-sm-between">
+              <div class="col-2 col-sm-1 fs-3 post-button">
+                <i class="bx bx-like"></i>
+              </div>
+              <div class="col-1 p-0 px-sm-2 fs-3 post-button">
+                <i class="bx bx-comment"></i>
+              </div>
+              <div
+                class="col-9 col-sm-10 flex-sm-fill fs-3 text-end post-button"
+              >
+                <i class="bx bx-bookmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
     <!-- Menu -->
     <div class="mobile-menu">
-        <div class="d-flex justify-content-center align-items-center container-menu gap-2">
-          <a href="#" class="text-decoration-none">
-            <div class="menu-icon">
-              <i class="bx bx-home"></i>
-            </div>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <div class="menu-icon">
-              <i class="bx bx-chat"></i>
-            </div>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <div class="menu-icon" style="width: 55px; height: 55px">
-              <i class="bx bx-plus"></i>
-            </div>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <div class="menu-icon">
-              <i class="bx bx-user"></i>
-            </div>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <div class="menu-icon">
-              <i class="bx bx-cog"></i>
-            </div>
-          </a>
-        </div>
+      <div
+        class="d-flex justify-content-center align-items-center container-menu gap-2"
+      >
+        <a href="#" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-home"></i>
+          </div>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-chat"></i>
+          </div>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <div class="menu-icon" style="width: 55px; height: 55px">
+            <i class="bx bx-plus"></i>
+          </div>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-user"></i>
+          </div>
+        </a>
+        <a href="#" class="text-decoration-none">
+          <div class="menu-icon">
+            <i class="bx bx-cog"></i>
+          </div>
+        </a>
       </div>
-  
+    </div>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
     <!-- Swiper JS -->
