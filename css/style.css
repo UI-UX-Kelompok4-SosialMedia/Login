@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&family=Inter:wght@300;400;700&display=swap");
+
+:root {
+  --main-color: #00bdd6;
+  --nav-color: #0095a9;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+nav {
+  width: 100vw;
+}
+
+/* Header */
+
+.navbar-custom {
+  background-color: var(--nav-color);
+}
+.nav-fluid {
+  margin: 0 110px;
+}
+.nav-fluid .mobile-logo {
+  display: none;
+}
+
+.search-field {
+  display: flex;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+  width: 500px;
+}
+
+.search-field i {
+  width: 30px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+
+.search-field input {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  padding: 6px 0;
+}
+
+.search-field input:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.dropdown-menu[data-bs-popper] .notif {
+  display: none;
+}
+
+/* main */
+main {
+  margin-top: 60px;
+  width: 100%;
+  padding: 0 20px 50px 20px;
+  overflow: scroll;
+  height: 80vh;
+}
+/* Posts */
+.post-title {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.img-fluid {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.dropdown::marker {
+  content: none;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+.dropdown i {
+  font-size: 25px;
+}
+
+.card-title.post-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.card-subtitle.post-date,
+.card-text.post-content {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.img-post {
+  width: 300px;
+}
+
+.img-post img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mobile-menu {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.container-menu {
+  background-color: var(--main-color);
+  padding: 15px 0;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--nav-color);
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 70px 40px !important;
+  }
+  .search-field {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 120%;
+    border: 1px solid rgb(197, 197, 197);
+    z-index: 2;
+  }
+  .nav-fluid {
+    margin: 0 10px;
+  }
+
+  .nav-fluid .desktop-logo {
+    display: none;
+  }
+  .nav-fluid .mobile-logo {
+    display: inline-block;
+  }
+  .dropdown-menu[data-bs-popper] {
+    left: -100%;
+  }
+  .dropdown-menu[data-bs-popper] .notif {
+    display: block;
+  }
+  aside {
+    display: none;
+  }
+  .web-post {
+    display: none;
+  }
+  .img-post {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  main {
+    padding: 70px 40px !important;
+  }
+  .search-field {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 120%;
+    border: 1px solid rgb(197, 197, 197);
+    z-index: 2;
+  }
+  .nav-fluid {
+    margin: 0 10px;
+  }
+
+  .nav-fluid .desktop-logo {
+    display: none;
+  }
+  .nav-fluid .mobile-logo {
+    display: inline-block;
+  }
+  .dropdown-menu[data-bs-popper] {
+    left: -100%;
+  }
+  .dropdown-menu[data-bs-popper] .notif {
+    display: block;
+  }
+  aside {
+    display: none;
+  }
+  .web-post {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  main {
+    overflow: visible;
+  }
+  aside .sidebar {
+    width: 250px !important;
+  }
+  .position-fixed {
+    top: 48px;
+  }
+  .left.card {
+    height: 500px;
+  }
+  .nav .nav-item .menu-link {
+    color: rgb(57, 57, 57);
+  }
+  .nav .nav-item .menu-link.selected {
+    color: var(--main-color);
+    border-left: solid 3px var(--main-color);
+  }
+  .right.card {
+    height: 500px;
+    overflow: scroll;
+  }
+  .right.card::-webkit-scrollbar {
+    display: none;
+  }
+  .right.card .card-body h1 {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    color: var(--main-color);
+    font-size: 32px;
+  }
+  .button-post a i {
+    font-size: 26px;
+    color: rgb(74, 74, 74);
+  }
+
+  .form-control.post {
+    border: none;
+    resize: none;
+  }
+
+  .form-control.post:focus {
+    outline: none !important;
+    box-shadow: none;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
